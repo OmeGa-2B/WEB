@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica HTML</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <!--table row-->
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bets</td>
+                <td>gratis</td>
+            </tr>
+            <tr>
+                <td>agua</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>agua muy cara se estac acabando</td>
+                <td>200 $</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td> TOTAL: 220</td>
+        </tfoot>
+    </table>
+    <!--Lista no ordenada-->
+    <ul>
+        <!-- list item-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- lista ordenada-->
+    <ol>
+        <li value="20">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">subelemento 1</li>
+                <li style="list-style-type: lower-alpha;">subelemento 2</li>
+                <li style="list-style-type: lower-alpha;">subelemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    <!--get: url maxima de 250 caracteres-->
+    <form action="/practicas/HTML" method="post">
+        <label for="nombre">Nombre</label>
+        <!--name es la llave del campo-->
+        <!--placeholder indica el tipo de dato-->
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Rodriguez"/>
+        <br>
+        <label for="comentaio">Comentario</label>
+        <textarea  rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">valor por defecto</textarea>
+        <button type="button">boton</button>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+    <h1>Heading</h1> <!--los heading se usan para titulos y subtitulos-->
+    <hr><!-- para separar con una linea el contenido de la pagina-->
+    <h2>segunfo Heading</h2>
+    <p>parrafo.</p>
+    <p>segundo parrafo.</p>
+    <!-- span se utiliza para seleccion discreta-->
+    <!--br es para salto de linea-->
+    <p>Este texto es <span style = "color: blue;">mucho mas largo</span>
+    y es para mostrar <br> la
+    etiqueta de span</p>
+    <!-- hipervinculo-->
+    <a target="_blank" href="https://github.com/OmeGa-2B">Ir a github</a>
+    <!--agregar imagenes-->
+    <img src="img/t.jpg" width="400" height="300"/>
+</body>
+</html>
