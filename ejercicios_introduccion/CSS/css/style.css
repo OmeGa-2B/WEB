@@ -1,0 +1,163 @@
+#titulo {
+    color: tomato;
+}
+
+/*seleccionar solo los parrafos con la clase texto */
+p.texto {
+    color: steelblue;
+}
+
+p.especial {
+    color: mediumspringgreen;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+/** {
+    font-size: 24px;
+
+ } */
+
+.color{
+    /*
+    hexadecimal
+        #0 ausencia de color
+        #f mayor precensia de color
+        #pede escribirse con 6 digitos o tres
+
+        #000000 negro
+        #000 negro
+    RGB
+        valores de 0 a 255
+        color: rgb(0,0,0);
+    */
+    color: #f00;
+    /* agregar bordes*/
+    /* border: 5px black solid; */
+    border-style: solid;
+    border-color: blue;
+    /* esquinas redondeadas */
+    border-radius: 5px;
+    /* ancho del norde */
+    /* 2em signifixa 2 veces el tamaño de la fuente */
+    /* rem relativo al tamaño del elemto raiz, 1 rem aproximado es 16px */
+    border-width: 5px;
+}
+
+#fondo {
+    /* opacidad */
+    background-color: rgba(255,0,0);
+    /* opacidad al elemnto completo */
+    /* opacity: 0.5; */
+    background-image: url('img/');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.margen {
+    background-color: chocolate;
+    /* marge de afuera */
+    margin: 15px;
+    /* margen hacia dentro */
+    padding: 15px;
+    border: solid 1px black;
+    outline: red;
+
+}
+
+.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px blue;
+}
+
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: yellow;
+}
+a:active {
+    color: red;
+}
+
+ul{
+    background-color: cyan;
+    list-style-type: none;
+    padding: 0;
+    /* list-style-position: inside; */
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+     /* display: none;  */
+    /* visibility: hidden; */
+    width: 300px;
+    background-color: red;
+}
+
+.inline{
+    display: inline;
+}
+
+#position{
+    position: relative;
+    left: 20px;
+
+}
+
+.left{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+.container {
+    height: 200px;
+}
+
+.card{
+    border: solid 0px #ddd;
+    border-radius: 5px;
+    margin: 0 ;
+    padding: 10px 0;
+    width: 33.3%;
+}
