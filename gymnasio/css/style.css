@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-image: url('../img/portada.jpg') ;
+   background-color: #141414;
     color: white;
     padding: 3rem 2rem;
 }
@@ -19,32 +19,32 @@ header h1 {
     text-align: center;
 }
 
-.carrusel{
+.carrusel {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 700px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px black;
+    box-shadow: 0 12px 16px black;
 }
 
-.carrusel-inner{
+.carrusel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.carrusel-item{
+.carrusel-item {
     min-width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
-.carrusel-item img{
+.carrusel-item img {
     width: 100%;
     border-radius: 10px;
     opacity: 0.7;
 }
 
-button{
+button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -56,54 +56,111 @@ button{
     border-radius: 50%;
 }
 
-.prev{
-    left: 10px;
+.prev {
+    left: 15px;
 }
 
-.next{
-    right: 10px;
+.next {
+    right: 15px;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#crossfit{
-    background-color: #3c3b3b;
-    width: 30%;
+#tarjetas {
+    display: flex;
+    justify-content: space-around;
+    margin: 4% 30px;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
 }
 
-#tarjetas article{
-    width: 100%;
-    padding: 10px 10px 10px 10px;
+#tarjetas article {
+    padding: 10px;
     margin-top: 30px;
-}
-
-#tarjetas article img{
     width: 30%;
+    text-align: center;
 }
 
-footer{
+#tarjetas article h2 {
+    color: aliceblue;
+}
+
+#tarjetas article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tarjeta_deporte {
+    background-color: #3e3c3c;
+    border-radius: 8px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.tarjeta_deporte:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+}
+
+footer {
+    margin-top: 30px;
     background-color: #141414;
     padding: 3rem;
     color: white;
 }
 
-
-footer section{
-    float:right;
+footer section {
+    float: right;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
-footer a{
+footer a {
     transition: color 0.3s ease;
     color: white;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     color: cornflowerblue;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    .carrusel {
+        height: 500px;
+    }
+    #tarjetas article {
+        width: 45%; /* Ajusta el ancho de las tarjetas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .carrusel {
+        height: 300px;
+    }
+    #tarjetas article {
+        width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas muy pequeñas */
+    }
+    button {
+        padding: 5px;
+    }
+    footer section {
+        float: none;
+        text-align: center;
+    }
+    footer a {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
