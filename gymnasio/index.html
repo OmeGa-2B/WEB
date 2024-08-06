@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 </head>
 <body>
     <header id="titulo">
@@ -25,9 +26,10 @@
                 <img src="img/crossc.jpg" alt="imagen 1">
             </article>
         </div>
-        <button class="prev" onclick="prevSlide()"><</button>
-        <button class="next" onclick="prevSlide()">></button>
     </section>
+    <div id="actividades">
+        <h2>CONOCE LAS ACTIVIDADES QUE TENEMOS PARA TI</h2>
+    </div>
     <section id="tarjetas">
         <article id="crossfit" class="tarjeta_deporte">
             <div>
@@ -54,6 +56,29 @@
             </div>
         </article>
     </section>
+    <section class ='information'>
+        <article id="informacion">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Descripcion que cuente algo sobre la historia de lugar,
+               su objetivo como centro deportivo y lo que ofrece.
+            </p>
+            <div id="lista_contactos">
+                <h2>Numeros Telefonicos</h2>
+                <ol>
+                    <li>55-5555-5555</li>
+                    <li>55-5535-5445</li>
+                </ol>
+                <h2>Correos Electronicos</h2>
+                <ol>
+                    <li>correo 1</li>
+                    <li>correo 2</li>
+                </ol>
+            </div>
+        </article>
+        <article id="map">
+            <div id="map"></div>
+        </article>
+    </section>
     <footer>
         <section>
             <a href="https://github.com/">Github</a>
@@ -62,6 +87,7 @@
         <p>Copyright 2024</p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 </body>
 </html>

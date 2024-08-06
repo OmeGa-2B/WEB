@@ -20,3 +20,16 @@ function nextSlide() {
 function prevSlide() {
     showSlide(currentIndex - 1);
 }
+
+function initMap(){
+    const map = L.map('map').setView([19.42847,-99.12766],13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([19.42847,-99.12766]).addTo(map)
+        .bindPopup('Ubicacion del gimnasio')
+        .openPopup();
+}
+
+document.addEventListener('DOMContentLoaded',initMap);

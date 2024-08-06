@@ -44,42 +44,28 @@ header h1 {
     opacity: 0.7;
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
+#actividades {
+    margin-top: 8rem;
+    margin-left: 2rem;
 }
 
-.prev {
-    left: 15px;
+#actividades h2 {
+    color: aliceblue;
 }
 
-.next {
-    right: 15px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-#tarjetas {
+#tarjetas{
     display: flex;
     justify-content: space-around;
-    margin: 4% 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
     gap: 20px;
     flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
 }
 
 #tarjetas article {
-    padding: 10px;
-    margin-top: 30px;
     width: 30%;
+    padding: 15px;
     text-align: center;
 }
 
@@ -104,6 +90,28 @@ button:hover {
     transform: scale(1.2);
 }
 
+.information{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.information article{
+    padding: 20px;
+    margin-top: 10px;
+    height: 400px;
+    width: 45%;
+    background-color: #222;
+}
+
+.information article h2,p {
+    color: aliceblue;
+}
+
+#informacion ol,li{
+    color: aliceblue;
+}
 footer {
     margin-top: 30px;
     background-color: #141414;
@@ -140,6 +148,10 @@ footer a:hover {
     #tarjetas article {
         width: 45%; /* Ajusta el ancho de las tarjetas en pantallas más pequeñas */
     }
+
+    .information article{
+        width: 45%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -151,6 +163,9 @@ footer a:hover {
     }
     #tarjetas article {
         width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas muy pequeñas */
+    }
+    .information article{
+        width: 100%;
     }
     button {
         padding: 5px;
