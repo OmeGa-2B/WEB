@@ -13,13 +13,11 @@ function showSlide(index) {
     document.querySelector('.carrusel-inner').style.transform = `translateX(${offset}%)`;
 }
 
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
 
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
+document.querySelector('.next').addEventListener('click', nextSlide);
+document.querySelector('.prev').addEventListener('click', prevSlide);
+
+
 
 function initMap(){
     const map = L.map('map').setView([19.42847,-99.12766],13);
@@ -33,3 +31,8 @@ function initMap(){
 }
 
 document.addEventListener('DOMContentLoaded',initMap);
+
+function toggleMenu() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+}
