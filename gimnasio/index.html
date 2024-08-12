@@ -11,32 +11,53 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
-        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#titulo">Inicio</a></li>
-            <li class="nav-item"><a href="#carrusel">Galería</a></li>
-            <li class="nav-item"><a href="#tarjetas">Actividades</a></li>
-            <li class="nav-item"><a href="#mapa">Ubicación</a></li>
-            <li class="nav-item"><a href="#contacto">Contacto</a></li>
-        </ul>
+        <article>
+            <h2>GIMNASIO</h2>
+        </article>
+        <section>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#tarjetas">Actividades</a></li>
+                <li class="nav-item"><a href=".informacion">Ubicación</a></li>
+                <li class="nav-item dropdown"><a class="dropbtn">Redes Sociales</a>
+                    <div class="dropdown-content">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Tik Tok</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </nav>
     <header id="titulo">
         <h1>GIMNASIO</h1>
     </header>
+    <!-- Carrusel de imagenes -->
     <section class="carrusel" id="carrusel">
         <div class="carrusel-inner">
             <article class="carrusel-item active">
                 <img src="img/ca3.jpg" alt="imagen 1">
+                <div class = "carrusel-texto">
+                    <h2>SUPERA LOS LIMITES DE TU CUERPO</h2>
+                </div>
             </article>
             <article class="carrusel-item">
                 <img src="img/gimc.jpg" alt="imagen 1">
+                <div class = "carrusel-texto">
+                    <h2>EQUIPAMIENTO MODERNO Y VARIADO</h2>
+                </div>
             </article>
             <article class="carrusel-item">
                 <img src="img/crossc.jpg" alt="imagen 1">
+                <div class = "carrusel-texto">
+                    <h2>AMBIENTE DE AGRADABLE Y COMPETITIVO</h2>
+                </div>
             </article>
         </div>
     </section>
+    <!-- seccion donde se muestran las diferentes actividades del establecimiento -->
     <div id="actividades">
         <h2>CONOCE LAS ACTIVIDADES QUE TENEMOS PARA TI</h2>
     </div>
@@ -66,6 +87,7 @@
             </div>
         </article>
     </section>
+    <!-- Seccion donde se mostrara la informacion de contacto y ubicacion -->
     <section class ='information'>
         <article id="informacion">
             <h2>SOBRE NOSOTROS</h2>
@@ -91,7 +113,7 @@
     </section>
     <footer>
         <section>
-            <a href="https://github.com/">Github</a>
+            <a href="https://github.com/OmeGa-2B">Github</a>
             <a href="mailto:bjsanab6@gmail.com">Correo electronico </a>
         </section>
         <p>Copyright 2024</p>
