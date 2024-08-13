@@ -20,16 +20,18 @@ header h1 {
 }
 
 
-.navbar h2{
-    margin: 0;
-    float: left;
-    padding: 1rem 1rem 1rem 1rem;
-    color: aliceblue;
-}
+
 .navbar {
     background-color: #1b1a1a;
     overflow: hidden;
     position: relative;
+}
+
+.navbar h2{
+    margin: 0;
+    float: left;
+    padding: 1rem;
+    color: aliceblue;
 }
 
 .menu-toggle {
@@ -49,10 +51,12 @@ header h1 {
     padding: 0;
     display: flex;
     justify-content:right;
+    align-items: center;
 }
 
 .nav-item {
     margin: 0;
+    position: relative;
 }
 
 .nav-item a {
@@ -70,18 +74,18 @@ header h1 {
 
 .dropdown{
     position: relative;
-    display: inline-block;
 }
 .dropdown-content{
     display: none;
     position: absolute;
+    background-color: #1b1a1a;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(0, 0, 0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a{
-    color: #141414;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -89,13 +93,23 @@ header h1 {
 }
 
 .dropdown-content a:hover{
-    background-color: #141414;
+    background-color: #575757;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content, .dropdown-content.show{
     display: block;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    float: right;
+}
 
 
 
@@ -185,6 +199,56 @@ header h1 {
     transform: scale(1.2);
 }
 
+.informacion-adicional{
+    display: none;
+    margin-top: 1rem;
+}
+
+.tarjeta_deporte .informacion-adicional.show{
+    display: block;
+}
+
+.informacion-adicional h2{
+    margin-top: 3rem;
+}
+
+.informacion-adicional h3{
+    color: aliceblue;
+}
+
+.informacion-adicional p{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.informacion-adicional li{
+    margin-top: 0.5rem;
+    text-align: left;
+}
+.informacion-adicional ul{
+    margin-bottom: 3rem;
+}
+
+
+.toggle-info{
+    cursor: pointer;
+    color: aliceblue;
+    background-color: #3e3c3c;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.toggle-info:hover {
+    color: cornflowerblue;
+}
+
+
+
 .information{
     display: flex;
     justify-content: space-around;
@@ -249,6 +313,10 @@ footer a:hover {
     .nav-item a {
         padding: 1rem;
     }
+    .dropdown-content{
+        position: static;
+    }
+
     header h1 {
         font-size: 3rem;
     }

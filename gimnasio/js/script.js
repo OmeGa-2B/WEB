@@ -64,3 +64,39 @@ function toggleMenu() {
     const navList = document.querySelector('.nav-list');
     navList.classList.toggle('show');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.querySelector('.dropdown');
+    const dropbtn = dropdown.querySelector('.dropbtn');
+
+    dropbtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Previene el comportamiento predeterminado de los enlaces.
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!dropdown.contains(event.target)) {
+            dropdown.querySelector('.dropdown-content').classList.remove('show');
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const botones = document.querySelectorAll('.toggle-info');
+
+    botones.forEach(boton => {
+        boton.addEventListener('click', function() {
+            const infoAdicional = this.nextElementSibling;
+
+            if (infoAdicional.classList.contains('show')) {
+                infoAdicional.classList.remove('show');
+                this.textContent = 'VER MAS'; // Cambiar el texto del botón
+            } else {
+                infoAdicional.classList.add('show');
+                this.textContent = 'VER MENOS'; // Cambiar el texto del botón
+            }
+        });
+    });
+});
