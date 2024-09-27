@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Veterinaria [Nombre]</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+</head>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <!-- Encabezado -->
+    <header style="margin-bottom: 4rem; background-color: #008080; color: antiquewhite; padding: 2rem">
+        <div class="logo">
+            <img style="width: 100px;float:left;" src="/veterinaria/img/logo.png" alt="Logo de la veterinaria">
+        </div>
+        <div>
+            <h1 style="text-align: center;">VETERIANARIA</h1>
+        </div>
+        <nav style="text-align: center;">
+                <a href="/veterinaria/index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="adopciones.html">Adopciones</a>
+                <a href="blog.html">Blog</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section class="intro-citas">
+            <h1>Agenda tu Cita</h1>
+            <p>En Veterinaria [Nombre], queremos asegurarnos de que tu mascota reciba la mejor atención. Completa el formulario a continuación para agendar una cita con nosotros.</p>
+        </section>
+
+        <section class="formulario-cita">
+            <h2>Formulario de Cita</h2>
+            <form action="procesar-cita.php" method="POST">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+
+                <label for="mascota">Nombre de la Mascota:</label>
+                <input type="text" id="mascota" name="mascota" required placeholder="Nombre de tu mascota">
+
+                <label for="tipo-mascota">Tipo de Mascota:</label>
+                <select id="tipo-mascota" name="tipo-mascota" required>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="servicio">Servicio Solicitado:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="consulta-general">Consulta General</option>
+                    <option value="vacunacion">Vacunación</option>
+                    <option value="cirugia">Cirugía</option>
+                    <option value="estetica">Estética y Baño</option>
+                    <option value="hospitalizacion">Hospitalización</option>
+                    <option value="emergencias">Emergencias</option>
+                </select>
+
+                <label for="fecha">Fecha Preferida:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora Preferida:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="mensaje">Comentarios Adicionales (Opcional):</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cualquier información adicional que debamos saber"></textarea>
+
+                <button type="submit" class="btn">Agendar Cita</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer style="background-color: #008080; padding:3rem; color:antiquewhite ">
+        <div class="contact-info" style="margin: 0;">
+            <p>Dirección: Calle Principal #123, Ciudad, Estado</p>
+            <p>Teléfono: +52 123 456 7890</p>
+            <p>Email: contacto@veterinaria.com</p>
+        </div>
+        <p style="float: right; margin:0;">&copy; 2024 Veterinaria [Nombre]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

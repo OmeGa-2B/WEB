@@ -19,8 +19,6 @@ header h1 {
     text-align: center;
 }
 
-
-
 .navbar {
     background-color: #1b1a1a;
     overflow: hidden;
@@ -196,7 +194,7 @@ header h1 {
 
 .tarjeta_deporte:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .informacion-adicional{
@@ -227,9 +225,6 @@ header h1 {
     margin-top: 0.5rem;
     text-align: left;
 }
-.informacion-adicional ul{
-    margin-bottom: 3rem;
-}
 
 
 .toggle-info{
@@ -246,7 +241,6 @@ header h1 {
 .toggle-info:hover {
     color: cornflowerblue;
 }
-
 
 
 .information{
@@ -271,6 +265,27 @@ header h1 {
 #informacion ol,li{
     color: aliceblue;
 }
+
+.informacion-adicional{
+    background-color: #4a4848;
+    padding: 1rem;
+}
+
+.horarios{
+    margin-left: 3rem;
+    float: left;
+}
+
+.entrenadores{
+    margin-right: 8rem;
+    float: right;
+}
+
+.beneficios{
+    margin-bottom: 2rem;
+}
+
+
 footer {
     margin-top: 30px;
     background-color: #141414;

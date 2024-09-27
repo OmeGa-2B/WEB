@@ -65,6 +65,7 @@ function toggleMenu() {
     navList.classList.toggle('show');
 }
 
+//submenu de las redes sociales
 document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.querySelector('.dropdown');
     const dropbtn = dropdown.querySelector('.dropbtn');
@@ -83,9 +84,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//funcion para mostrar mas informacion en las tarjetas
 document.addEventListener('DOMContentLoaded', function() {
     const botones = document.querySelectorAll('.toggle-info');
-
     botones.forEach(boton => {
         boton.addEventListener('click', function() {
             const infoAdicional = this.nextElementSibling;
