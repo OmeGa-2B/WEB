@@ -7,7 +7,7 @@
     <title>Agendar Cita - Veterinaria [Nombre]</title>
     <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
 </head>
-<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+<body style="margin-left:5rem;margin-right:5rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
     <!-- Encabezado -->
     <header style="margin-bottom: 4rem; background-color: #008080; color: antiquewhite; padding: 2rem">
         <div class="logo">
@@ -34,47 +34,45 @@
             <p>En Veterinaria [Nombre], queremos asegurarnos de que tu mascota reciba la mejor atención. Completa el formulario a continuación para agendar una cita con nosotros.</p>
         </section>
 
-        <section class="formulario-cita">
+        <section class="formulario-cita" style="margin: 8rem;">
             <h2>Formulario de Cita</h2>
             <form action="procesar-cita.php" method="POST">
                 <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                <input style="margin-bottom: 1.5rem;" type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo"><br>
 
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+                <input style="margin-bottom: 1.5rem;" type="email" id="email" name="email" required placeholder="Tu correo electrónico"><br>
 
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+                <input style="margin-bottom: 1.5rem;" type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono"><br>
 
                 <label for="mascota">Nombre de la Mascota:</label>
-                <input type="text" id="mascota" name="mascota" required placeholder="Nombre de tu mascota">
+                <input style="margin-bottom: 1.5rem;" type="text" id="mascota" name="mascota" required placeholder="Nombre de tu mascota"><br>
 
                 <label for="tipo-mascota">Tipo de Mascota:</label>
-                <select id="tipo-mascota" name="tipo-mascota" required>
+                <select style="margin-bottom: 1.5rem;" id="tipo-mascota" name="tipo-mascota" required>
                     <option value="perro">Perro</option>
                     <option value="gato">Gato</option>
                     <option value="otro">Otro</option>
-                </select>
+                </select><br>
 
                 <label for="servicio">Servicio Solicitado:</label>
-                <select id="servicio" name="servicio" required>
+                <select style="margin-bottom: 1.5rem;" id="servicio" name="servicio" required>
                     <option value="consulta-general">Consulta General</option>
                     <option value="vacunacion">Vacunación</option>
-                    <option value="cirugia">Cirugía</option>
                     <option value="estetica">Estética y Baño</option>
                     <option value="hospitalizacion">Hospitalización</option>
-                    <option value="emergencias">Emergencias</option>
-                </select>
+                </select><br>
 
                 <label for="fecha">Fecha Preferida:</label>
-                <input type="date" id="fecha" name="fecha" required>
+                <input style="margin-bottom: 1.5rem;" type="date" id="fecha" name="fecha" required><br>
 
                 <label for="hora">Hora Preferida:</label>
-                <input type="time" id="hora" name="hora" required>
+                <input style="margin-bottom: 1.5rem;" type="time" id="hora" name="hora" required><br>
 
-                <label for="mensaje">Comentarios Adicionales (Opcional):</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cualquier información adicional que debamos saber"></textarea>
-
+                <label for="mensaje">Comentarios Adicionales (Opcional):</label><br>
+                <textarea style="margin-bottom: 1.5rem;" id="mensaje" name="mensaje" rows="4" placeholder="Cualquier información adicional que debamos saber"></textarea>
+                <br>
                 <button type="submit" class="btn">Agendar Cita</button>
             </form>
         </section>
