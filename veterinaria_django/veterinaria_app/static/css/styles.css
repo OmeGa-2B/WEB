@@ -1,0 +1,315 @@
+/* static/mi_app/styles.css */
+body {
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+header {
+    background-color: #008080;
+    color: antiquewhite;
+    text-align: center;
+    padding: 2rem;
+}
+
+#nombre_pagina{
+    text-align: center;
+    font-size: 3rem;
+}
+.carrusel img{
+    height: 35rem;
+}
+.logo img{
+    width: 100px;
+    float: left
+}
+.menu_navegacion{
+    text-align: center;
+}
+
+
+.menu_navegacion a{
+    color: aliceblue;
+    margin: 0.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.menu_navegacion a:hover{
+    color: cornflowerblue;
+}
+
+#cuerpo{
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.tarjeta-info{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.tarjeta-info img{
+    width: 25rem;
+    height: 13rem;
+    margin-right: 2rem;
+}
+
+.testimonios{
+    display: flex;
+    margin-top: 4rem;
+}
+
+.testimonios-citas{
+    margin-right: 10rem;
+}
+
+.map{
+    width: 45rem;
+}
+.servicios{
+    margin-top: 3rem;
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.intro-servicios{
+    background-color: #f0eff0;
+    padding: 3rem;
+}
+
+.intro-servicios p{
+    padding: 1rem;
+}
+
+.intro-servicios ul{
+    padding-left: 4rem;
+}
+
+.intro-servicios li{
+    margin-bottom: 0.5rem;
+}
+
+.resaltar{
+    font-size: 2rem;
+}
+
+.lista-servicios{
+    padding: 3rem;
+}
+
+.servicio-item{
+    background-color: #f0eff0;
+    display: flex;
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+.servicio-item img{
+    width: 20rem;
+    height: 15rem;
+}
+
+.intro-citas{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+.formulario-cita{
+    display: flex;
+    margin: 8rem;
+    padding: 5rem;
+    background-color: #f0efe5;
+}
+
+.formulario-cita input{
+    width: 80%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-cita select{
+    margin-bottom: 1.5rem;
+}
+
+.formulario-cita textarea{
+    width: 80%;
+}
+
+.intro-adopciones{
+    margin-bottom: 5rem;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.intro-adopciones p{
+    padding: 1rem;
+}
+
+.intro-adopciones li{
+    margin-bottom: 1rem;
+}
+
+.mascota-item{
+    display: flex;
+    background-color: #f0efe5;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.mascota-item img{
+    margin-right: 2rem;
+    width: 25rem;
+}
+
+
+
+
+
+
+
+
+.mascota-item:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.mascotas-disponibles h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.proceso-adopcion{
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+}
+
+.intro-tienda{
+    margin:4rem 4rem 4rem 4rem;
+
+}
+
+.intro-tienda h1{
+    margin-bottom: 2rem;
+}
+
+.intro-tienda h2{
+    margin-top: 4rem;
+}
+
+.intro-tienda li{
+    margin-bottom: 1rem;
+}
+
+.tarjeta-mascota{
+    margin: 4rem;
+    background-color: #f0efe5;
+    padding: 2rem;
+    display: flex;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.tarjeta-mascota img{
+    width: 23rem;
+    margin-right: 2rem;
+}
+
+.tarjeta-mascota:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.intro-nosotros{
+    margin: 7rem 7rem 7rem 7rem;
+}
+
+#title_nosotros{
+    text-align: center;
+}
+
+.equipo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.miembro-equipo{
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.miembro-equipo img{
+    width: 25rem;
+    height: 15rem;
+}
+
+.mision-vision{
+    background-color: #f0efe5;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.valores{
+    background-color: #f0efe5;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.intro-blog{
+    margin: 5rem 6rem 10rem 6rem;
+}
+
+.intro-blog h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro-blog p{
+    text-align: justify;
+}
+
+.articulos-blog{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 3rem 10rem 3rem;
+}
+
+.articulos-blog a{
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.articulos-blog a:hover{
+    color: cornflowerblue;
+}
+
+.post{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #f0efe5;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.post:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.post img{
+    width: 17rem;
+    height: 10rem;
+}
+
+.suscribete{
+    margin: 0rem 4rem 6rem 4rem;
+}
+footer {
+    background-color: #008080;
+    color: antiquewhite;
+    text-align: center;
+    padding: 3rem;
+}
+

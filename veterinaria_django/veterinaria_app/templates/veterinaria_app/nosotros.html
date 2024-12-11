@@ -1,0 +1,57 @@
+{% extends "veterinaria_app/base.html" %}
+{% load static %}
+
+{% block title %}
+  Nossotros
+{% endblock  %}
+
+{% block content %}
+<section class="intro-nosotros">
+    <h1>Sobre Nosotros</h1>
+    <p>En Veterinaria, nuestro objetivo es proporcionar el mejor cuidado y atención a las mascotas de nuestra comunidad. Con años de experiencia y un equipo altamente calificado, ofrecemos un servicio personalizado para cada mascota y su dueño.</p>
+</section>
+
+<h2 id="title_nosotros">Conoce a Nuestro Equipo</h2>
+<section class="equipo" >
+    <div class="miembro-equipo">
+        <img src="{% static 'img/nosotros/juean.jpg' %}" alt="Doctor en veterinaria">
+        <h3>Dr. Juan Pérez</h3>
+        <p>Veterinario Principal - Especialista en cuidados intensivos y cirugía veterinaria.</p>
+    </div>
+
+    <div class="miembro-equipo">
+        <img src="{% static 'img/nosotros/Ana.jpg' %}" alt="Doctora en veterinaria">
+        <h3>Dra. Ana García</h3>
+        <p>Veterinaria - Especialista en medicina felina y animales exóticos.</p>
+    </div>
+
+    <div class="miembro-equipo">
+        <img src="{% static 'img/nosotros/carlos.jpg' %}" alt="Asistente veterinario" >
+        <h3>Carlos López</h3>
+        <p>Asistente Veterinario - Apasionado por el bienestar animal, con amplia experiencia en manejo de emergencias.</p>
+    </div>
+
+</section>
+
+<section class="mision-vision">
+    <h2>Nuestra Misión y Visión</h2>
+    <div class="mision">
+        <h3>Misión</h3>
+        <p>Nuestra misión es brindar la mejor atención médica veterinaria, proporcionando un servicio de calidad, basado en el amor y respeto por los animales.</p>
+    </div>
+    <div class="vision">
+        <h3>Visión</h3>
+        <p>Ser la veterinaria de referencia en nuestra comunidad, con un enfoque en el bienestar animal y la satisfacción de nuestros clientes.</p>
+    </div>
+</section>
+
+<section class="valores">
+    <h2>Nuestros Valores</h2>
+    <ul>
+        <li><strong>Compromiso:</strong> Nos dedicamos al bienestar de cada mascota que atendemos.</li>
+        <li><strong>Respeto:</strong> Tratamos a cada mascota y a su dueño con el máximo respeto y empatía.</li>
+        <li><strong>Excelencia:</strong> Nos esforzamos por proporcionar un servicio de alta calidad, siempre aprendiendo y mejorando.</li>
+        <li><strong>Innovación:</strong> Utilizamos los últimos avances en medicina veterinaria para brindar el mejor cuidado posible.</li>
+    </ul>
+</section>
+{% endblock  %}

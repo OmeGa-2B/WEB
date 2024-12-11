@@ -1,0 +1,84 @@
+{% extends "veterinaria_app/base.html" %}
+{% load static %}
+
+{% block title %}
+  Adopciones
+{% endblock  %}
+
+{% block content %}
+<section class="intro-adopciones">
+    <h1>Adopta una Mascota</h1>
+    <p > <strong>¡Dale un hogar a un amigo fiel!</strong> <br><br>
+        En nuestra veterinaria, no solo cuidamos la salud de tus mascotas, también ayudamos
+        a encontrarles un hogar lleno de amor. Tenemos varios animalitos esperando la oportunidad
+        de ser parte de una familia. Todos han sido revisados por nuestro equipo veterinario,
+        están vacunados y en óptimas condiciones de salud. <br><br>
+        Adoptar es un acto de amor y compromiso. Si estás buscando un nuevo compañero, ven a conocer a nuestros peludos amigos, te aseguramos que encontrarás el compañero ideal.
+    </p>
+    <h2>Por que adoptar?</h2>
+    <ul>
+        <li>Ayudas a reducir el abandono y sobrepoblación de animales.</li>
+        <li>Todos nuestros animales son entregados esterilizados y desparasitados.</li>
+        <li>¡Adoptar salva vidas!</li>
+    </ul>
+    <p><strong>Contáctanos para más información o visita nuestras instalaciones. ¡Te esperamos!</strong></p>
+</section>
+
+<section class="mascotas-disponibles">
+    <h2>Mascotas Disponibles</h2>
+
+    <div class="mascota-item">
+        <section >
+            <img src="{% static 'img/adopcion/max.jpg' %}" alt="Perro en adopción">
+        </section>
+        <section>
+            <h3>Max</h3>
+            <p>Edad: 2 años</p>
+            <p>Raza: Mestizo</p>
+            <p>Descripción: Max es un perro juguetón y muy cariñoso que busca un hogar lleno de amor.
+                Se lleva bien con niños y otros perros.</p>
+            <a href="contacto.html" class="btn">Adoptar</a>
+        </section>
+    </div>
+
+    <div class="mascota-item">
+        <section style="margin-right: 2rem;">
+            <img src="{% static 'img/adopcion/luna.jpg' %}" alt="Perro en adopción">
+        </section>
+        <section>
+            <h3>Luna</h3>
+            <p>Edad: 1 años</p>
+            <p>Raza: Siamesa</p>
+            <p>Descripción: Luna es una gata tranquila y afectuosa que necesita un hogar donde pueda relajarse y recibir atención.</p>
+            <a href="contacto.html" class="btn">Adoptar</a>
+        </section>
+    </div>
+
+    <div class="mascota-item">
+        <section style="margin-right: 2rem;">
+            <img src="{% static 'img/adopcion/rocky.jpg' %}" alt="Perro en adopción">
+        </section>
+        <section>
+            <h3>Rocky</h3>
+            <p>Edad: 3 años</p>
+            <p>Raza: Pastor Aleman</p>
+            <p>Descripción: Rocky es un perro enérgico y leal que sería
+                perfecto para una familia activa o alguien que disfrute del aire libre.</p>
+            <a href="contacto.html" class="btn">Adoptar</a>
+        </section>
+    </div>
+
+</section>
+
+<section class="proceso-adopcion">
+    <h2>Proceso de Adopción</h2>
+    <p>Si estás interesado en adoptar, sigue estos pasos:</p>
+    <ol>
+        <li>Revisa las mascotas disponibles y elige aquella que se adapte a tu hogar.</li>
+        <li>Contáctanos a través del formulario o por teléfono para concertar una cita.</li>
+        <li>Realizamos una pequeña entrevista para asegurarnos de que la mascota estará en un ambiente adecuado.</li>
+        <li>Completa el proceso de adopción y da la bienvenida a tu nuevo amigo en casa.</li>
+    </ol>
+    <a href="contacto.html" class="btn">Más Información</a>
+</section>
+{% endblock  %}

@@ -1,0 +1,46 @@
+{% extends "veterinaria_app/base.html" %}
+{% load static %}
+{% block  title %}
+    Citas
+{% endblock%}
+{% block content %}
+<section class="intro-citas">
+    <h1>Agenda tu Cita</h1>
+    <p>En Veterinaria [Nombre], queremos asegurarnos de que tu mascota reciba la mejor atención. Completa el formulario a continuación para agendar una cita con nosotros.</p>
+</section>
+
+<section class="formulario-cita">
+    <form action="procesar-cita.php" method="POST">
+        <label for="nombre">Nombre Completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo"><br>
+        <label for="email">Correo Electrónico:</label> <br>
+        <input type="email" id="email" name="email" required placeholder="Tu correo electrónico"><br>
+        <label for="telefono">Teléfono:</label> <br>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono"><br>
+        <label for="mascota">Nombre de la Mascota:</label><br>
+        <input type="text" id="mascota" name="mascota" required placeholder="Nombre de tu mascota"><br>
+        <label for="tipo-mascota">Tipo de Mascota:</label><br>
+        <select id="tipo-mascota" name="tipo-mascota" required>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="otro">Otro</option>
+        </select><br>
+        <label for="servicio">Servicio Solicitado:</label><br>
+        <select id="servicio" name="servicio" required>
+            <option value="consulta-general">Consulta General</option>
+            <option value="vacunacion">Vacunación</option>
+            <option value="estetica">Estética y Baño</option>
+            <option value="hospitalizacion">Hospitalización</option>
+        </select><br>
+        <label for="fecha">Fecha Preferida:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br>
+        <label for="hora">Hora Preferida:</label><br>
+        <input type="time" id="hora" name="hora" required>
+        <label for="mensaje">Comentarios Adicionales (Opcional):</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cualquier información adicional que debamos saber"></textarea>
+        <br><button type="submit" class="btn">Agendar Cita</button>
+    </form>
+</section>
+
+
+{% endblock content %}

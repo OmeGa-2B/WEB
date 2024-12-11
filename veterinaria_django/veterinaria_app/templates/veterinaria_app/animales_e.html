@@ -1,0 +1,66 @@
+{% extends "veterinaria_app/base.html" %}
+{% load static %}
+
+{% block title %}
+  Animales Exoticos
+{% endblock  %}
+{% block content %}
+<section class="intro-tienda">
+    <h1>Explora el fascinante mundo de los animales exóticos</h1>
+    <div>
+        <p >¿Estás buscando una mascota fuera de lo común? En nuestra veterinaria
+            ofrecemos una selecta variedad de animales exóticos certificados,
+            perfectos para quienes buscan un compañero único.
+            Todos nuestros animales cumplen con los más altos estándares de bienestar y
+            cuentan con la certificación necesaria para garantizar su origen legal y ético. <br><br>
+
+            <strong>Compromiso con la responsabilidad</strong> <br>
+            Cada animal ha sido revisado por nuestro equipo veterinario, garantizando
+            su buen estado de salud. Además, te ofrecemos toda la asesoría necesaria para
+            que aprendas sobre los cuidados y requerimientos específicos de cada especie,
+            asegurando que tu nuevo compañero tenga una vida larga y saludable.
+        </p>
+
+        <h2>Por que comprar con nosotros?</h2>
+        <ul>
+            <li><strong>Certificación legal: </strong> Todos nuestros animales cumplen con las normativas de protección y comercio de especies.</li>
+            <li><strong>Asesoría experta: </strong> Nuestro equipo te guiará en todo el proceso de compra, brindándote información sobre cuidados, alimentación y mantenimiento.</li>
+            <li><strong>Cuidado y bienestar: </strong> Antes de la entrega, cada animal es sometido a un riguroso chequeo veterinario para garantizar que se encuentra en perfectas condiciones de salud.
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- Sección de tarjetas de mascotas -->
+<section class="mascotas-tienda">
+    <div class="tarjeta-mascota">
+        <section>
+            <img src="{% static 'img/tienda/iguana.jpg' %}" alt="Imagen de un cachorro de perro">
+        </section>
+        <section>
+            <h2>Iguana Verde</h2>
+            <p><strong>Precio:</strong> $3,000 MXN</p>
+            <p><strong>Edad:</strong> 2 meses</p>
+            <p><strong>Género:</strong> Macho</p>
+            <p><strong>Descripción:</strong> Este reaptil es el amigo ideal si lo que te gustaria tener a tu propio dinosaurio en tu casa</p>
+            <button class="btn">Comprar</button>
+        </section>
+    </div>
+
+    <div class="tarjeta-mascota">
+        <section >
+            <img src="{% static 'img/tienda/tortuga.jpg' %}" alt="Imagen de un cachorro de perro">
+        </section>
+        <section>
+            <h2>Tortuga de Orejas Rojas</h2>
+            <p><strong>Precio:</strong> $400 MXN</p>
+            <p><strong>Edad:</strong> 10 meses</p>
+            <p><strong>Género:</strong> Hembra</p>
+            <p><strong>Descripción:</strong> Si quieres un animal tactico, este es el mejor para ti, esta tortuga semiacuatica es excelenete para personas con el espacio necesario y que no tengan mucho tiempo libre</p>
+            <button class="btn">Comprar</button>
+        </section>
+    </div>
+
+</section>
+{% endblock content %}

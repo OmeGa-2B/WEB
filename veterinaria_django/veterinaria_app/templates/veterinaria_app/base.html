@@ -1,0 +1,47 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Veterinaria{% endblock %}</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}?v={{ timestamp }}">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="{% static 'img/logo.png' %}" alt="Logo de la veterinaria">
+        </div>
+        <h1 id="nombre_pagina">VETERINARIA</h1>
+        <nav class="menu_navegacion">
+            <a href="{% url 'index' %}">Inicio</a>
+            <a href="{% url 'servicios' %}">Servicios</a>
+            <a href="{% url 'citas' %}">Citas</a>
+            <a href="{% url 'adopciones' %}">Adopciones</a>
+            <a href="{% url 'animales_e' %}">Animales Exoticos</a>
+            <!--<a href="">Articulos Para Msscotas</a> -->
+            <a href="{% url 'blog' %}">Blog</a>
+            <a href="{% url 'nosotros' %}">Nosotros</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="{% static 'js/archivoScript.js' %}"></script>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Dirección: Calle Principal #123, Ciudad, Estado</p>
+        <p>Teléfono: +52 123 456 7890</p>
+        <p>Email: contacto@veterinaria.com</p>
+    </footer>
+</body>
+</html>
